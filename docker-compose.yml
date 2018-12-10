@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  php:
+    build:
+      context: .
+    volumes:
+    - .:/project
+    ports:
+    - 80:80
+    tty: true
